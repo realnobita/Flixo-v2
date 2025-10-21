@@ -8,6 +8,7 @@ module.exports = {
   category: "Info",
   run: async (client, message, args) => {
     try {
+      // ✅ Async uptime formatter (no moment needed)
       const formatDuration = async (ms) => {
         let sec = Math.floor(ms / 1000);
         let min = Math.floor(sec / 60);
@@ -29,7 +30,7 @@ module.exports = {
 
       // Embed
       const embed = new EmbedBuilder()
-        .setTitle("Bot & Shard Stats")
+        .setTitle("📊 Bot & Shard Stats")
         .setColor(0x2f3136)
         .addFields(
           {
@@ -44,7 +45,7 @@ module.exports = {
           },
           {
             name: "Dev ‹/›",
-            value: `[Nobita](https://discord.com/users/1380026050104397825)`,
+            value: `[ᴍʀ ɴᴏʙɪᴛᴀ](https://discord.com/users/1380026050104397825)`,
             inline: false,
           },
           {
@@ -87,4 +88,3 @@ module.exports = {
     }
   },
 };
-    
