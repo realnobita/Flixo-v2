@@ -3,7 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 module.exports = {
     name: "premiumreq",
     description: "Advertise premium features of the bot",
-    category: "Info",
+    category: "Information",
     owner: false, // Anyone can run this command to learn about premium
     run: async (client, message, args, prefix) => {
         try {
@@ -26,4 +26,3 @@ module.exports = {
         }
     }
 };
-      
